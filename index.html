@@ -1,9 +1,158 @@
-<html>
- <head>
- </head>
- <body>
-   <h1>Oblivious Paxos<h1>
-   <h1>Fast Oblivious Paxos<h1>
-   <p>Coming soon!</p>
- </body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">OPaxos</a>
+      <!-- <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul> -->
+      <!-- <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+    </div>
+  </nav>
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Oblivious Paxos</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Privacy-preserving consensus over secret shares</h5>
+      </div>
+      <div class="row center">
+        <p class="light">
+          <b>Oblivious Paxos</b> (OPaxos) is a privacy-preserving distributed consensus protocol 
+          integrating <b>Secret Sharing</b> into Paxos family of <b>consensus protocol</b>. 
+          The usage of Secret Sharing provides <b>information-theoretic privacy</b>,
+          which protects against adversaries with unbounded computational power,
+          as long as they do not collude with one another. 
+          <br>
+          We also develop <b>Fast Oblivious Paxos</b> (Fast-OPaxos) 
+          protocol that enables non-leader node (or client) to directly
+          propose value to the acceptors (backups), without leader 
+          involvement. Fast-OPaxos is suitable for deployment under low conflict
+          rate.
+        </p>
+      </div>
+      <div class="row center">
+        <a href="https://fadhil.id/papers/opaxos-socc23.pdf" id="download-button" class="btn-small waves-effect waves-light orange">Paper</a>
+        <a href="https://fadhil.id/papers/opaxos-techreport.pdf" id="download-button" class="btn-small waves-effect waves-light orange">Tech Report</a>
+        <a href="https://github.com/opaxos/opaxos" id="download-button" class="btn-small waves-effect waves-light orange">Artifact</a>
+        <a href="https://github.com/opaxos/opaxos-tla" id="download-button" class="btn-small waves-effect waves-light orange">Model Checker</a>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Information-theoretic<br>Privacy</h5>
+
+            <p class="light center-align">An adversary, even with unbounded computational power, can not reveal the value being agreed upon, as long as the adversary does not collude with others.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Enables Strong<br>Consistency</h5>
+
+            <p class="light center-align">Support application that require strong consistency, such as Sequantial and Linearizable Consistency. Example of such application is a Password or Secret Storage</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Avoid Vendor<br>Lock-in</h5>
+
+            <p class="light center-align">Instead of relying a single cloud provider to store our private data, 
+              OPaxos advocates the use of multiple cloud providers that have insentive to not work together.
+            Thus, OPaxos avoids vendor lock-in.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <h3>News</h3>
+      <ul>
+        <li>[2023/11/01] Prototype code for OPaxos was released on Github</li>
+        <li>[2023/10/30] OPaxos was presented in SoCC 2023 in Santa Cruz, California</li>
+        <li>[2023/09/01] OPaxos' technical paper was accepted in the SoCC 2023</li>
+        <li>[2023/07/06] OPaxos' poster was presented in the EPFL SURI, Lausanne, Switzerland</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <!-- <h5 class="white-text">Oblivious Paxos</h5>
+          <p class="grey-text text-lighten-4">Oblivious Paxos (OPaxos) is a privacy-preserving consensus protocol 
+            integrating Secret Sharing into Paxos family of consensus protocol. 
+            The usage of Secret Sharing provides information-theoretic privacy,
+            which protects against adversaries with unbounded computational power,
+            as long as they do not collude with one another.</p> -->
+
+
+        </div>
+        <div class="col l3 s12">
+          <!-- <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul> -->
+        </div>
+        <div class="col l3 s12">
+          <!-- <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  </body>
 </html>
